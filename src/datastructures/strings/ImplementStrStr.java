@@ -1,5 +1,6 @@
 package datastructures.strings;
 
+//https://leetcode.com/problems/implement-strstr/
 public class ImplementStrStr {
 
     public static void main(String[] args) {
