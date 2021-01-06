@@ -11,7 +11,7 @@ public class NRepeatedElementInSize2NArray {
 
     private static int repeatedNTimes(int[] A) {
         HashSet<Integer> set = new HashSet<>();
-        for (int i : A){
+        for (int i : A) {
             if (set.contains(i)) {
                 return i;
             }

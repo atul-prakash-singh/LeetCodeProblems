@@ -13,8 +13,8 @@ public class RomanToInteger {
         a['M' - 'A'] = 1000;
         char prev = 'A';
         int sum = 0;
-        for(char c : s.toCharArray()) {
-            if(a[c - 'A'] > a[prev - 'A']) {
+        for (char c : s.toCharArray()) {
+            if (a[c - 'A'] > a[prev - 'A']) {
                 sum = sum - 2 * a[prev - 'A'];
             }
             sum = sum + a[c - 'A'];

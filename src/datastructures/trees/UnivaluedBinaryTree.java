@@ -10,7 +10,7 @@ public class UnivaluedBinaryTree {
         return sameValue(root);
     }
 
-    private boolean sameValue(TreeNode root){
+    private boolean sameValue(TreeNode root) {
         if (root == null) {
             return true;
         }

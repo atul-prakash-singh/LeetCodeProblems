@@ -23,7 +23,7 @@ public class ReverseBits {
 
     private static int reverseBitsI(int n) {
         int result = 0;
-        for(int i = 0; i < 32; i++) {
+        for (int i = 0; i < 32; i++) {
             int curr = n & 1;
             n >>>= 1;
             result <<= 1;

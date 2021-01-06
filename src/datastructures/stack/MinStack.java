@@ -37,7 +37,7 @@ class MinStackI {
     private Node head;
 
     public void push(int x) {
-        if(head == null) {
+        if (head == null) {
             head = new Node(x, x);
         } else {
             head = new Node(x, Math.min(x, head.min), head);
@@ -78,7 +78,9 @@ class MinStackII {
     int min;
     Stack<Integer> stack;
 
-    /** initialize your data structure here. */
+    /**
+     * initialize your data structure here.
+     */
     public MinStackII() {
         min = Integer.MAX_VALUE;
         stack = new Stack<Integer>();
@@ -86,7 +88,7 @@ class MinStackII {
 
 
     public void push(int x) {
-        if(x <= min){
+        if (x <= min) {
             stack.push(min);
             min = x;
         }
@@ -94,7 +96,7 @@ class MinStackII {
     }
 
     public void pop() {
-        if(stack.pop() == min) {
+        if (stack.pop() == min) {
             min = stack.pop();
         }
     }

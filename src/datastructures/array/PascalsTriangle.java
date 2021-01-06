@@ -26,7 +26,8 @@ public class PascalsTriangle {
             }
             cur.add(1);//last
             result.add(cur);
-            pre = cur; }
+            pre = cur;
+        }
         return result;
     }
 }
